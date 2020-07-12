@@ -1,0 +1,7 @@
+
+.classpath
+.project
+*.prefs
+.svn
+/target
+src/test/resources/parameters.properties
