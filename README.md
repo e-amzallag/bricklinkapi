@@ -1,5 +1,7 @@
 # Java Bricklink API
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dajlab/bricklinkapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dajlab/bricklinkapi)
+
 Java API for Bricklink API.
 
 See http://apidev.bricklink.com/redmine/projects/bricklink-api/wiki for more information about the official Bricklink API
