@@ -41,9 +41,13 @@ public class CategoryServiceImpl extends AbstractBricklinkService implements ICa
 	 * Constructor.
 	 * 
 	 * @param consumerKey
+	 *            consumer Key
 	 * @param consumerSecret
+	 *            consumer Secret
 	 * @param tokenValue
+	 *            token Value
 	 * @param tokenSecret
+	 *            token Secret
 	 */
 	public CategoryServiceImpl(String consumerKey, String consumerSecret, String tokenValue, String tokenSecret) {
 		super(consumerKey, consumerSecret, tokenValue, tokenSecret);

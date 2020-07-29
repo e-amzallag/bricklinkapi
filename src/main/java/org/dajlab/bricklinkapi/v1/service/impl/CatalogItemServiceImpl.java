@@ -50,9 +50,13 @@ public class CatalogItemServiceImpl extends AbstractBricklinkService implements 
 	 * Constructor.
 	 * 
 	 * @param consumerKey
+	 *            consumer Key
 	 * @param consumerSecret
+	 *            consumer Secret
 	 * @param tokenValue
+	 *            token Value
 	 * @param tokenSecret
+	 *            token Secret
 	 */
 	public CatalogItemServiceImpl(String consumerKey, String consumerSecret, String tokenValue, String tokenSecret) {
 		super(consumerKey, consumerSecret, tokenValue, tokenSecret);

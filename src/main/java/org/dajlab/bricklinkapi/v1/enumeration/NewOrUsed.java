@@ -42,7 +42,8 @@ public enum NewOrUsed {
 	/**
 	 * 
 	 * @param code
-	 * @return
+	 *            code
+	 * @return the enum, or null if not found
 	 */
 	@JsonCreator
 	public static NewOrUsed fromCode(String code) {

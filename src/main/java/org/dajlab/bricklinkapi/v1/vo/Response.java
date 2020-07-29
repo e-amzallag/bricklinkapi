@@ -21,6 +21,7 @@ package org.dajlab.bricklinkapi.v1.vo;
  * @author Erik Amzallag
  *
  * @param <T>
+ *            Data type
  */
 public class Response<T extends DataInterface> {
 
@@ -42,7 +43,8 @@ public class Response<T extends DataInterface> {
 	}
 
 	/**
-	 * @param meta the meta to set
+	 * @param meta
+	 *            the meta to set
 	 */
 	public void setMeta(Meta meta) {
 		this.meta = meta;
@@ -56,7 +58,8 @@ public class Response<T extends DataInterface> {
 	}
 
 	/**
-	 * @param data the data to set
+	 * @param data
+	 *            the data to set
 	 */
 	public void setData(T data) {
 		this.data = data;

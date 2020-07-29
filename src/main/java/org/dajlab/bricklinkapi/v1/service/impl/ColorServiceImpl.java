@@ -41,9 +41,13 @@ public class ColorServiceImpl extends AbstractBricklinkService implements IColor
 	 * Constructor.
 	 * 
 	 * @param consumerKey
+	 *            consumer Key
 	 * @param consumerSecret
+	 *            consumer Secret
 	 * @param tokenValue
+	 *            token Value
 	 * @param tokenSecret
+	 *            token Secret
 	 */
 	public ColorServiceImpl(String consumerKey, String consumerSecret, String tokenValue, String tokenSecret) {
 		super(consumerKey, consumerSecret, tokenValue, tokenSecret);

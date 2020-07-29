@@ -44,9 +44,13 @@ public class ItemMappingServiceImpl extends AbstractBricklinkService implements 
 	 * Constructor.
 	 * 
 	 * @param consumerKey
+	 *            consumer Key
 	 * @param consumerSecret
+	 *            consumer Secret
 	 * @param tokenValue
+	 *            token Value
 	 * @param tokenSecret
+	 *            token Secret
 	 */
 	public ItemMappingServiceImpl(String consumerKey, String consumerSecret, String tokenValue, String tokenSecret) {
 		super(consumerKey, consumerSecret, tokenValue, tokenSecret);

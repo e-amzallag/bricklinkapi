@@ -68,9 +68,13 @@ public abstract class AbstractBricklinkService {
 	 * Constructor.
 	 * 
 	 * @param consumerKey
+	 *            consumer Key
 	 * @param consumerSecret
+	 *            consumer Secret
 	 * @param tokenValue
+	 *            token Value
 	 * @param tokenSecret
+	 *            token Secret
 	 */
 	protected AbstractBricklinkService(String consumerKey, String consumerSecret, String tokenValue,
 			String tokenSecret) {
@@ -83,10 +87,13 @@ public abstract class AbstractBricklinkService {
 	/**
 	 * Call the service and return the response.
 	 * 
-	 * @param method http methode
-	 * @param uri    uri
+	 * @param method
+	 *            http methode
+	 * @param uri
+	 *            uri
 	 * @return the string representation of the JSON response
-	 * @throws BricklinkException exception
+	 * @throws BricklinkException
+	 *             exception
 	 */
 	protected String returnJsonResponse(Method method, String uri) throws BricklinkException {
 
@@ -96,11 +103,15 @@ public abstract class AbstractBricklinkService {
 	/**
 	 * Call the service and return the response.
 	 * 
-	 * @param method     http methode
-	 * @param uri        uri
-	 * @param parameters request parameters
+	 * @param method
+	 *            http methode
+	 * @param uri
+	 *            uri
+	 * @param parameters
+	 *            request parameters
 	 * @return the string representation of the JSON response
-	 * @throws BricklinkException exception
+	 * @throws BricklinkException
+	 *             exception
 	 */
 	protected String returnJsonResponse(Method method, String uri, Map<String, String> parameters)
 			throws BricklinkException {
@@ -123,10 +134,13 @@ public abstract class AbstractBricklinkService {
 	/**
 	 * Call the REST service with the encoded full url.
 	 * 
-	 * @param method http method
-	 * @param url    the url, complete with paramaters and authorization.
+	 * @param method
+	 *            http method
+	 * @param url
+	 *            the url, complete with paramaters and authorization.
 	 * @return the string representation of the JSON response
-	 * @throws BricklinkException exception
+	 * @throws BricklinkException
+	 *             exception
 	 */
 	private String callRestService(Method method, String url) throws BricklinkException {
 		try {
@@ -152,11 +166,15 @@ public abstract class AbstractBricklinkService {
 	 * @see <a href=
 	 *      "http://apidev.bricklink.com/redmine/projects/bricklink-api/wiki/Authorization">Authentication
 	 *      & Authorization</a>
-	 * @param method     http method
-	 * @param url        the url without any parameters
-	 * @param parameters url parameters
+	 * @param method
+	 *            http method
+	 * @param url
+	 *            the url without any parameters
+	 * @param parameters
+	 *            url parameters
 	 * @return the encoded parameters to add to the request
-	 * @throws BricklinkException exception
+	 * @throws BricklinkException
+	 *             exception
 	 */
 	private Map<String, String> encodeParameters(Method method, String url, Map<String, String> parameters)
 			throws BricklinkException {
@@ -177,11 +195,15 @@ public abstract class AbstractBricklinkService {
 	/**
 	 * Build the full url.
 	 * 
-	 * @param method     http method
-	 * @param baseUrl    the url
-	 * @param parameters parameters
+	 * @param method
+	 *            http method
+	 * @param baseUrl
+	 *            the url
+	 * @param parameters
+	 *            parameters
 	 * @return the full url
-	 * @throws BricklinkException exception
+	 * @throws BricklinkException
+	 *             exception
 	 */
 	private String buildUrl(Method method, String url, Map<String, String> parameters) throws BricklinkException {
 

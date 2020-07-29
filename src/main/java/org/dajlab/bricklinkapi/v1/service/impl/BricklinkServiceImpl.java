@@ -52,9 +52,13 @@ public class BricklinkServiceImpl implements IBricklinkService {
 	 * Constructor.
 	 * 
 	 * @param consumerKey
+	 *            consumer Key
 	 * @param consumerSecret
+	 *            consumer Secret
 	 * @param tokenValue
+	 *            token Value
 	 * @param tokenSecret
+	 *            token Secret
 	 */
 	public BricklinkServiceImpl(String consumerKey, String consumerSecret, String tokenValue, String tokenSecret) {
 
