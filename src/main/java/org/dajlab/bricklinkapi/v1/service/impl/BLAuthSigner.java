@@ -3,11 +3,11 @@ package org.dajlab.bricklinkapi.v1.service.impl;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
+import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
@@ -63,8 +63,8 @@ public class BLAuthSigner {
 	public BLAuthSigner(String consumerKey, String consumerSecret) {
 		this.consumerKey = consumerKey;
 		this.consumerSecret = consumerSecret;
-		this.oauthParameters = new HashMap<>();
-		this.queryParameters = new HashMap<>();
+		this.oauthParameters = new TreeMap<>();
+		this.queryParameters = new TreeMap<>();
 		this.timer = new Timer();
 	}
 
@@ -88,7 +88,7 @@ public class BLAuthSigner {
 	public Map<String, String> getFinalOAuthParams() throws BricklinkException {
 		String signature = computeSignature();
 
-		Map<String, String> params = new HashMap<>();
+		Map<String, String> params = new TreeMap<>();
 		params.putAll(oauthParameters);
 		params.put(SIGNATURE, signature);
 
@@ -181,7 +181,7 @@ public class BLAuthSigner {
 		private static final Map<String, String> ENCODING_RULES;
 
 		static {
-			Map<String, String> rules = new HashMap<>();
+			Map<String, String> rules = new TreeMap<>();
 			rules.put("*", "%2A");
 			rules.put("+", "%20");
 			rules.put("%7E", "~");

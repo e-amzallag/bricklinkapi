@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.TreeMap;
 
 import org.dajlab.bricklinkapi.v1.enumeration.Type;
 import org.dajlab.bricklinkapi.v1.service.impl.CatalogItemServiceImpl;
@@ -122,7 +122,7 @@ public class CatalogItemServiceTest {
 
 			PriceGuide price = null;
 
-			Map<String, Integer> parts = new HashMap<>();
+			Map<String, Integer> parts = new TreeMap<>();
 			parts.put("3003", 9);
 			parts.put("3003", 1);
 			parts.put("10884", 110);

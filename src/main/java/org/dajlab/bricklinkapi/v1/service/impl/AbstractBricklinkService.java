@@ -121,9 +121,9 @@ public abstract class AbstractBricklinkService {
 		if (parameters != null) {
 			StringBuilder params = new StringBuilder();
 			for (Entry<String, String> param : parameters.entrySet()) {
-				params.append(param.getKey() + "=" + param.getValue());
+				params.append("&" + param.getKey() + "=" + param.getValue());
 			}
-			baseUrl = baseUrl + "?" + params;
+			baseUrl = baseUrl + "?" + params.substring(1);
 		}
 
 		String encodedUrl = buildUrl(method, baseUrl, parameters);
