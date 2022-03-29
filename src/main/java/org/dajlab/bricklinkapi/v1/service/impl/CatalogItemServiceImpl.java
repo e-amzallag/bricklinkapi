@@ -15,8 +15,8 @@
  */
 package org.dajlab.bricklinkapi.v1.service.impl;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.dajlab.bricklinkapi.v1.enumeration.Method;
 import org.dajlab.bricklinkapi.v1.enumeration.Type;
@@ -117,7 +117,7 @@ public class CatalogItemServiceImpl extends AbstractBricklinkService implements 
 
 		Map<String, String> parameters = null;
 		if (colorId != null) {
-			parameters = new HashMap<>();
+			parameters = new TreeMap<>();
 			parameters.put("color_id", colorId.toString());
 		}
 		String uri = BASE_URI + type.name() + "/" + no + "/supersets";
@@ -153,7 +153,7 @@ public class CatalogItemServiceImpl extends AbstractBricklinkService implements 
 		String uri = BASE_URI + type.name() + "/" + no + "/subsets";
 		Map<String, String> mapParameters = null;
 		if (parameters != null) {
-			mapParameters = new HashMap<>();
+			mapParameters = new TreeMap<>();
 			if (parameters.getColorId() != null) {
 				mapParameters.put("color_id", parameters.getColorId().toString());
 			}
@@ -210,7 +210,7 @@ public class CatalogItemServiceImpl extends AbstractBricklinkService implements 
 		String uri = BASE_URI + type.name() + "/" + no + "/price";
 		Map<String, String> mapParameters = null;
 		if (parameters != null) {
-			mapParameters = new HashMap<>();
+			mapParameters = new TreeMap<>();
 			if (parameters.getColorId() != null) {
 				mapParameters.put("color_id", parameters.getColorId().toString());
 			}

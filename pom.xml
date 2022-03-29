@@ -5,7 +5,7 @@
 
 	<groupId>org.dajlab</groupId>
 	<artifactId>bricklinkapi</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<packaging>jar</packaging>
 
 	<name>BrickLink API</name>
@@ -107,17 +107,17 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.10.0</version>
+			<version>2.13.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>2.10.0</version>
+			<version>2.13.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.10.0</version>
+			<version>2.13.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-codec</groupId>

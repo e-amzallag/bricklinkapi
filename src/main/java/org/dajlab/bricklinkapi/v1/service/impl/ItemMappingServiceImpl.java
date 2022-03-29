@@ -15,8 +15,8 @@
  */
 package org.dajlab.bricklinkapi.v1.service.impl;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.dajlab.bricklinkapi.v1.enumeration.Method;
 import org.dajlab.bricklinkapi.v1.enumeration.Type;
@@ -73,7 +73,7 @@ public class ItemMappingServiceImpl extends AbstractBricklinkService implements 
 
 		Map<String, String> parameters = null;
 		if (colorId != null) {
-			parameters = new HashMap<>();
+			parameters = new TreeMap<>();
 			parameters.put("color_id", colorId.toString());
 		}
 		String uri = BASE_URI + Type.PART.name() + "/" + no;
