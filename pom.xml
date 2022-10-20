@@ -5,7 +5,7 @@
 
 	<groupId>org.dajlab</groupId>
 	<artifactId>bricklinkapi</artifactId>
-	<version>0.0.4</version>
+	<version>0.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>BrickLink API</name>
@@ -93,6 +93,18 @@
 				</executions>
 			</plugin>
 			
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+		    </plugin>
+			
 		</plugins>
 	</build>
 
@@ -107,17 +119,17 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.13.2</version>
+			<version>2.13.4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>2.13.2</version>
+			<version>2.13.4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.13.2.1</version>
+			<version>2.13.4.2</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-codec</groupId>
